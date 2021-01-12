@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TT:s maskin</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="loading">
+        <p>Loading...</p>
+      </div>
+    
+      <div id="sequencer">
+        <section class="controls-main">
+          <h1>Tage Stekis</h1>
+          <label for="bpm">BPM</label>
+          <input name="bpm" id="bpm" type="range" min="60" max="180" value="120" step="1" />
+          <span id="bpmval">120</span>
+          <button data-playing="false">Play</button>
+        </section>
+    
+        <div id="tracks">
+          <!-- track one: bleep -->
+          <section class="track-one">
+            <h2>Tom</h2>
+            <section class="controls">
+              <label for="tompitch">Pitch</label>
+              <input name="tompitch" id="tompitch" type="range" min="100" max="1000" value="400" step="5" />
+            </section><!--
+            --><section class="pads">
+              <button role="switch" aria-checked="false"><span>Voice 1, Note 1</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 1, Note 2</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 1, Note 3</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 1, Note 4</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 1, Note 5</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 1, Note 6</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 1, Note 7</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 1, Note 8</span></button>
+
+            </section>
+          </section>
+    
+          <!-- track two: pad/sweep -->
+          <section class="track-two">
+            <h2>HH op</h2>
+            <section class="controls">
+                <label for="hihatopenlength">Decay</label>
+                <input name="hihatopenlength" id="hihatopenlength" type="range" min="0" max="2.5" value="0.7" step="0.1" />
+            </section><!--
+            --><section class="pads">
+              <button role="switch" aria-checked="false"><span>Voice 2, Note 1</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 2, Note 2</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 2, Note 3</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 2, Note 4</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 2, Note 5</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 2, Note 6</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 2, Note 7</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 2, Note 8</span></button>
+
+            </section>
+          </section>
+    
+          <!-- track three: noise -->
+          <section class="track-three">
+            <h2>HH cl</h2>
+            <section class="controls">
+              <label for="hihatlength">Decay</label>
+              <input name="hihatlength" id="hihatlength" type="range" min="0" max="1.0" value="0.1" step="0.1" />
+  
+            </section><!--
+            --><section class="pads">
+              <button role="switch" aria-checked="false"><span>Voice 3, Note 1</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 3, Note 2</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 3, Note 3</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 3, Note 4</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 3, Note 5</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 3, Note 6</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 3, Note 7</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 3, Note 8</span></button>
+
+            </section>
+          </section>
+    
+          <!-- track four: drill -->
+          <section class="track-four">
+            <h2>Snare</h2>
+            <section class="controls">
+              <label for="snarepitch">Pitch</label>
+              <input name="snarepitch" id="snarepitch" type="range" min="100" max="500" value="100" step="5" />
+            </section><!--
+            --><section class="pads">
+              <button role="switch" aria-checked="false"><span>Voice 4, Note 1</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 4, Note 2</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 4, Note 3</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 4, Note 4</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 4, Note 5</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 4, Note 6</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 4, Note 7</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 4, Note 8</span></button>
+
+              
+            </section>
+          </section>
+          <!-- track four: drill -->
+          <section class="track-five">
+            <h2>Kick</h2>
+            <section class="controls">
+              <label for="kickpitch">Pitch</label>
+              <input name="kickpitch" id="kickpitch" type="range" min="80" max="500" value="150" step="5" />
+            </section><!--
+            --><section class="pads">
+              <button role="switch" aria-checked="false"><span>Voice 5, Note 1</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 5, Note 2</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 5, Note 3</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 5, Note 4</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 5, Note 5</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 5, Note 6</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 5, Note 7</span></button>
+              <button role="switch" aria-checked="false"><span>Voice 5, Note 8</span></button>
+
+
+            </section>
+          </section>
+        </div>
+      </div><!-- sequencer -->
+
+ <script type="text/javascript" src="wavetable.js"></script>
+ <script type="text/javascript" src="drums.js"></script>
+
+ <script type="text/javascript">   
+    //const AudioContext = window.AudioContext() || window.webkitAudioContext();
+
+</script>
+</body>
+</html>
