@@ -16,7 +16,6 @@ allPadButtons.forEach(el => {
 })
 
 const channelData = buffer.getChannelData(0);
-
 for (let i = 0; i < buffer.length; i++) {
     channelData[i] = Math.random() * 2 - 1;
 };

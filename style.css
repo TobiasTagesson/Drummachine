@@ -30,12 +30,12 @@
     font-family: sans-serif, system-ui;
     font-size: 120%;
     color: var(--black);
-  }
-  
+  }  
   h2 {
     font-size: 1.2em;
   }
-  
+
+
   /* loading ~~~~~~~~~~~~~~~~~~~~~ */
   .loading {
     background: var(--white);
